@@ -24,11 +24,11 @@ public class ModItems {
     public static void registerModItems(){
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entires ->{
-           entires.add(PINK_GARNET);
-           entires.add(RAW_PINK_GARNET);
-           entires.add(BLUE_GARNET);
-           entires.add(BRANCH_FLOWER);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
+           entries.add(PINK_GARNET);
+           entries.add(RAW_PINK_GARNET);
+           entries.add(BLUE_GARNET);
+           entries.add(BRANCH_FLOWER);
         });
     }
 }

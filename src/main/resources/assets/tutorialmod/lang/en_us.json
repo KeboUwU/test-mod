@@ -2,6 +2,11 @@
   "item.tutorialmod.pink_garnet": "Pink Garnet",
   "item.tutorialmod.raw_pink_garnet": " Raw Pink Garnet",
   "item.tutorialmod.blue_garnet": "Blue Garnet",
-  "item.tutorialmod.branch_flower": "Branch Flower"
+  "item.tutorialmod.branch_flower": "Branch Flower",
+
+  "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet ",
+  "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet ",
+  "block.tutorialmod.green_gem": "Green Gem",
+  "block.tutorialmod.basic_flower": "Basic Flower"
 
 }
