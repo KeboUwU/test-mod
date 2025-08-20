@@ -35,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GREEN_GEM);
                         entries.add(ModItems.BRANCH_FLOWER);
                         entries.add(ModItems.BLUE_GARNET);
+                        entries.add(ModBlocks.JVREX);
 
                     }).build());
 

@@ -26,6 +26,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f)
             .strength(3f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block JVREX = registerBlock(("jvrex"),
+            new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.SLIME)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -46,6 +48,7 @@ public class ModBlocks {
             entries.add(PINK_GARNET_BLOCK);
             entries.add(RAW_PINK_GARNET_BLOCK);
             entries.add(GREEN_GEM);
+            entries.add(JVREX);
 
 
 
