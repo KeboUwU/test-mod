@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "green_gem",
+  "ingredients":{
+  "item": "raw_green_gem"
+  },
+  "result": {
+    "id": "green_gem"
+}
+}

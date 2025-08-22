@@ -16,6 +16,8 @@ public class ModItems {
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
     public static final Item BLUE_GARNET = registerItem("blue_garnet", new Item(new Item.Settings()));
     public static final Item BRANCH_FLOWER = registerItem("branch_flower", new Item(new Item.Settings()));
+    public static final Item RAW_GREEN_GEM = registerItem("raw_green_gem", new Item(new Item.Settings()));
+    public static final Item GREEN_GEM = registerItem("green_gem", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name),item);
@@ -29,6 +31,8 @@ public class ModItems {
            entries.add(RAW_PINK_GARNET);
            entries.add(BLUE_GARNET);
            entries.add(BRANCH_FLOWER);
+           entries.add(RAW_GREEN_GEM);
+           entries.add(GREEN_GEM);
         });
     }
 }

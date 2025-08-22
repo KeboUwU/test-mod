@@ -29,13 +29,16 @@ public class ModItemGroups {
                     }).build());
     public static final ItemGroup  CUSTOM_BLOCKS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID,"custom_blocks"),
-            FabricItemGroup.builder().icon(()->new ItemStack(ModBlocks.GREEN_GEM))
+            FabricItemGroup.builder().icon(()->new ItemStack(ModBlocks.GREEN_GEM_BLOCK))
                     .displayName(Text.translatable("itemgroup.tutorial.custom_blocks"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.GREEN_GEM);
+                        entries.add(ModBlocks.GREEN_GEM_BLOCK);
                         entries.add(ModItems.BRANCH_FLOWER);
                         entries.add(ModItems.BLUE_GARNET);
                         entries.add(ModBlocks.JVREX);
+                        entries.add(ModBlocks.MARCIN);
+                        entries.add(ModItems.RAW_GREEN_GEM);
+                        entries.add(ModItems.GREEN_GEM);
 
                     }).build());
 

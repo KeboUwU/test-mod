@@ -22,12 +22,15 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()));
 
-    public static final Block GREEN_GEM = registerBlock(("green_gem"),
+    public static final Block GREEN_GEM_BLOCK = registerBlock(("green_gem_block"),
             new Block(AbstractBlock.Settings.create().strength(4f)
-            .strength(3f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block JVREX = registerBlock(("jvrex"),
             new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.SLIME)));
+
+    public static final Block MARCIN = registerBlock(("marcin"),
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -41,14 +44,17 @@ public class ModBlocks {
     }
 
 
+
+
     public static void  registerModBlocks(){
         TutorialMod.LOGGER.info("Registering Mod Blocks for: " + TutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(PINK_GARNET_BLOCK);
             entries.add(RAW_PINK_GARNET_BLOCK);
-            entries.add(GREEN_GEM);
+            entries.add(GREEN_GEM_BLOCK);
             entries.add(JVREX);
+            entries.add(MARCIN);
 
 
 
