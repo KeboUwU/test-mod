@@ -7,11 +7,14 @@
   "item.tutorialmod.green_gem": "Green Gem",
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet ",
+  "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore ",
+  "block.tutorialmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet ",
   "block.tutorialmod.green_gem_block": "Green Gem Block",
   "block.tutorialmod.basic_flower": "Basic Flower",
   "block.tutorialmod.jvrex": "Jvrex",
   "block.tutorialmod.marcin": "Marcin",
+  "block.tutorialmod.green_gem_ore": "Green Gem Ore",
 
   "itemgroup.tutorial.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorial.pink_garnet_blocks": "Pink Garnet Blocks",

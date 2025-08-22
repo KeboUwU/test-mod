@@ -32,6 +32,15 @@ public class ModBlocks {
     public static final Block MARCIN = registerBlock(("marcin"),
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)));
 
+    public static final Block GREEN_GEM_ORE = registerBlock(("green_gem_ore"),
+            new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.STONE).requiresTool()));
+
+    public static final Block PINK_GARNET_ORE = registerBlock(("pink_garnet_ore"),
+            new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.STONE).requiresTool()));
+
+    public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock(("pink_garnet_deepslate_ore"),
+            new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.STONE).requiresTool()));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -46,6 +55,7 @@ public class ModBlocks {
 
 
 
+
     public static void  registerModBlocks(){
         TutorialMod.LOGGER.info("Registering Mod Blocks for: " + TutorialMod.MOD_ID);
 
@@ -55,6 +65,9 @@ public class ModBlocks {
             entries.add(GREEN_GEM_BLOCK);
             entries.add(JVREX);
             entries.add(MARCIN);
+            entries.add(GREEN_GEM_ORE);
+            entries.add(PINK_GARNET_DEEPSLATE_ORE);
+            entries.add(PINK_GARNET_ORE);
 
 
 

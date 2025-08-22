@@ -26,6 +26,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                     }).build());
     public static final ItemGroup  CUSTOM_BLOCKS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID,"custom_blocks"),
@@ -39,6 +41,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MARCIN);
                         entries.add(ModItems.RAW_GREEN_GEM);
                         entries.add(ModItems.GREEN_GEM);
+                        entries.add((ModBlocks.GREEN_GEM_ORE));
 
                     }).build());
 
