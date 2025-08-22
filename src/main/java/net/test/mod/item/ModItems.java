@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.test.mod.TutorialMod;
+import net.test.mod.item.custom.ChiselItem;
 
 
 public class ModItems {
@@ -18,6 +19,8 @@ public class ModItems {
     public static final Item BRANCH_FLOWER = registerItem("branch_flower", new Item(new Item.Settings()));
     public static final Item RAW_GREEN_GEM = registerItem("raw_green_gem", new Item(new Item.Settings()));
     public static final Item GREEN_GEM = registerItem("green_gem", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel",new ChiselItem(new Item.Settings().maxDamage(32)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name),item);
@@ -33,6 +36,8 @@ public class ModItems {
            entries.add(BRANCH_FLOWER);
            entries.add(RAW_GREEN_GEM);
            entries.add(GREEN_GEM);
+           entries.add(CHISEL);
+
         });
     }
 }

@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.test.mod.TutorialMod;
 import net.test.mod.block.ModBlocks;
+import net.test.mod.item.custom.ChiselItem;
 
 public class ModItemGroups {
     public static final ItemGroup PINK_GARNET_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -18,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
+
+                        entries.add(ModItems.CHISEL);
                     }).build());
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID,"pink_garnet_blocks"),
@@ -28,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_ORE);
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
                     }).build());
     public static final ItemGroup  CUSTOM_BLOCKS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID,"custom_blocks"),

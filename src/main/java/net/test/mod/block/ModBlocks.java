@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.test.mod.TutorialMod;
+import net.test.mod.block.custom.MagicBlock;
 
 public class ModBlocks {
 
@@ -32,7 +33,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.SLIME)));
 
     public static final Block MARCIN = registerBlock(("marcin"),
-            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)));
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL).strength(2f)));
 
     public static final Block GREEN_GEM_ORE = registerBlock(("green_gem_ore"),
             new Block(AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.STONE).requiresTool()));
@@ -44,6 +45,9 @@ public class ModBlocks {
     public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock(("pink_garnet_deepslate_ore"),
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
                      AbstractBlock.Settings.create().strength(3f).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block){
@@ -72,6 +76,7 @@ public class ModBlocks {
             entries.add(GREEN_GEM_ORE);
             entries.add(PINK_GARNET_DEEPSLATE_ORE);
             entries.add(PINK_GARNET_ORE);
+            entries.add(MAGIC_BLOCK);
 
 
 
