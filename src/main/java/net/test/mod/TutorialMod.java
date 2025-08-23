@@ -2,6 +2,7 @@ package net.test.mod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.test.mod.block.ModBlocks;
 import net.test.mod.item.ModItemGroups;
 import net.test.mod.item.ModItems;
@@ -20,6 +21,7 @@ public class TutorialMod implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 
 	}
 }
