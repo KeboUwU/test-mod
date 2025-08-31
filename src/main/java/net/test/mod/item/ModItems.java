@@ -23,6 +23,8 @@ public class ModItems {
     public static final Item CHISEL = registerItem("chisel",new ChiselItem(new Item.Settings().maxDamage(32)));
 
     public static final Item CAULIFLOWER  = registerItem("cauliflower",new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)));
+    public static final Item FRIED_EGG = registerItem("fried_egg", new Item(new Item.Settings().food(ModFoodComponents.FRIED_EGG)));
+
 
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes",new Item(new Item.Settings()));
 
@@ -41,6 +43,7 @@ public class ModItems {
            entries.add(RAW_GREEN_GEM);
            entries.add(GREEN_GEM);
            entries.add(CHISEL);
+           entries.add(FRIED_EGG);
 
         });
     }

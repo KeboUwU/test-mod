@@ -7,4 +7,9 @@ import net.minecraft.entity.effect.StatusEffects;
 public class ModFoodComponents {
     public static final FoodComponent CAULIFLOWER = new FoodComponent.Builder().nutrition(3).saturationModifier(2.25f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200), 0.15F).build();
+
+    public static  final FoodComponent FRIED_EGG = new FoodComponent.Builder().nutrition(5).saturationModifier(3.0f)
+            .build();
 }
+
+

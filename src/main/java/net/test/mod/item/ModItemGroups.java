@@ -48,6 +48,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_GREEN_GEM);
                         entries.add(ModItems.GREEN_GEM);
                         entries.add((ModBlocks.GREEN_GEM_ORE));
+                        entries.add(ModItems.FRIED_EGG);
 
                     }).build());
 
